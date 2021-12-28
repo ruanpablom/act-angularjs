@@ -1,0 +1,10 @@
+<div class="details-container">
+  <div class="title-container">
+    <img class="rounded-thumb" ng-src="{{getImageUrl(personagemDetails)}}" alt="">
+    <h1 style="margin-left: 10px;">{{personagemDetails.name}}</h1>
+  </div>
+  <h2 ng-if="personagemDetails.comics.items.length > 0" style="margin-bottom: 0;">Quadrinhos: </h2>
+  <ul class="list">
+    <li style="cursor: auto;" class="list-item" ng-repeat="comic in personagemDetails.comics.items">{{comic.name}}</li>
+  </ul>
+</div>

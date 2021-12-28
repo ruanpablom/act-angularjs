@@ -1,0 +1,11 @@
+<div class="personagens-container">
+  <h1>{{title}}</h1>
+  <div class="input-container">
+    <input class="search-input" type="text" ng-model="personagemName" placeholder="Digite o nome do personagem">
+    <button class="btn btn-img" ng-click="searchByName(personagemName)"><img class="btn-img" src="assets/lupa.svg" alt=""></button>
+  </div>
+  
+  <ul class="list">
+    <li ng-repeat="personagem in personagens" class="list-item" ng-click="personagemDetails(personagem.id)">{{personagem.name}}</li>
+  </ul>
+</div>

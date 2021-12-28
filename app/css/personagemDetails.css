@@ -1,0 +1,31 @@
+.rounded-thumb{
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+}
+
+.details-container{
+  display: flex; 
+  flex-direction: column;
+  padding: 30px;
+  width: 400px;
+  background-color: #202020;
+}
+
+@media (max-width: 475px){
+  .details-container{
+    width: 300px;
+  }
+}
+
+
+@media (max-width: 370px){
+  .details-container{
+    width: 250px;
+  }
+}
+
+.title-container{
+  display: flex;
+  align-items: center;
+}
